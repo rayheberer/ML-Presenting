@@ -53,9 +53,14 @@
 
 
     var data = [trace1, trace2, trace3, trace4];
+
+    var layout = {
+    	title: 'Norms of Uniformly Sampled Random Vectors'
+    };
+
     // timeout required so that page will have rendered before newPlot
     // is called.
-    setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 200);
+    setTimeout( function(){Plotly.newPlot('plotlyPlot', data, layout)}, 200);
 
   </script>
 
