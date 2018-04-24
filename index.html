@@ -48,6 +48,10 @@
     // timeout required so that page will have rendered before newPlot
     // is called.
     setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 200);
+
+    var data2 = d3.csv('data.csv', function(d){
+    	console.log(d);
+    })
   </script>
 
   <div class="container">
